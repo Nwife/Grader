@@ -9,12 +9,12 @@ from inspect import getsourcefile
 from pathlib import Path
 from typing import Any, Dict, List, Mapping
 
-from autograder.testcase_utils..config_manager import GradingConfig
-from autograder.testcase_utils.exit_codes import SYSTEM_RESERVED_EXIT_CODES, USED_EXIT_CODES, ExitCodeEventType
-from autograder.testcase_utils.shell import ShellCommand, ShellError
-from autograder.testcase_utils.test_helper_formatter import get_formatted_test_helper
-from autograder.testcase_utils.testcase_io import TestCaseIO
-from autograder.testcase_utils.testcase_result_validator import generate_validating_string, validate_output
+from .config_manager import GradingConfig
+from testcase_utils.exit_codes import SYSTEM_RESERVED_EXIT_CODES, USED_EXIT_CODES, ExitCodeEventType
+from testcase_utils.shell import ShellCommand, ShellError
+from testcase_utils.test_helper_formatter import get_formatted_test_helper
+from testcase_utils.testcase_io import TestCaseIO
+from testcase_utils.testcase_result_validator import generate_validating_string, validate_output
 
 
 @dataclasses.dataclass

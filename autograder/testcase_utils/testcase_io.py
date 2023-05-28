@@ -1,7 +1,7 @@
 from pathlib import Path
 from typing import Callable, Dict
 
-from autograder.testcase_utils.config_manager import DEFAULT_ARGLIST_VALUE_KEY
+from testcase_utils.config_manager import DEFAULT_ARGLIST_VALUE_KEY
 
 FORMATTER_TYPE = Callable[[str], str]
 

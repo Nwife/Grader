@@ -7,19 +7,19 @@ from os import PathLike
 from pathlib import Path
 from typing import TYPE_CHECKING, Any, Callable, List, Optional, Type
 
-from autograder.config_manager import GradingConfig
-from autograder.testcase_utils.abstract_testcase import TestCase, TestCaseResult
-from autograder.testcase_utils.exit_codes import ExitCodeEventType
-from autograder.testcase_utils.shell import ShellCommand, ShellError, get_shell_command
-from autograder.testcase_utils.submission import find_appropriate_source_file_stem
-from autograder.testcase_utils.testcase_io import EMPTY_TESTCASE_IO
-from autograder.testcase_utils.testcase_result_validator import LAST_LINE_SPLITTING_CHARACTER
+from config_manager import GradingConfig
+from testcase_utils.abstract_testcase import TestCase, TestCaseResult
+from testcase_utils.exit_codes import ExitCodeEventType
+from testcase_utils.shell import ShellCommand, ShellError, get_shell_command
+from testcase_utils.submission import find_appropriate_source_file_stem
+from testcase_utils.testcase_io import EMPTY_TESTCASE_IO
+from testcase_utils.testcase_result_validator import LAST_LINE_SPLITTING_CHARACTER
 
 POSSIBLE_MAKEFILE_NAMES = "GNUmakefile", "makefile", "Makefile"
 MULTIFILE_SUBMISSION_NAME = "<<<Makefile>>>"  # This is a hack to give a semi-unique name to multifile submissions
 
 if TYPE_CHECKING:
-    from autograder.testcase_utils.testcase_picker import TestCasePicker
+    from testcase_utils.testcase_picker import TestCasePicker
 
 
 class PathWithStdoutOnlyInfo(type(Path())):

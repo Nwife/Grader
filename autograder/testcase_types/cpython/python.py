@@ -3,8 +3,8 @@ import sys
 from pathlib import Path
 from typing import List
 
-from autograder.testcase_utils.abstract_testcase import TestCase as AbstractTestCase
-from autograder.testcase_utils.shell import EMPTY_COMMAND, ShellError, get_shell_command
+from testcase_utils.abstract_testcase import TestCase as AbstractTestCase
+from testcase_utils.shell import EMPTY_COMMAND, ShellError, get_shell_command
 
 
 class TestCase(AbstractTestCase):

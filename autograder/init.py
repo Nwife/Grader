@@ -1,6 +1,7 @@
-import importlib.metadata
+# import importlib.metadata
 
-__version__ = importlib.metadata.version("autograder")
+__version__ = "v1.0.1"
+# __version__ = importlib.metadata.version("autograder")
 
 __title__ = "autograder"
 __description__ = "Automatic assignment grading for instructor use in programming courses"

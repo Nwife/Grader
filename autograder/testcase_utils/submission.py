@@ -6,7 +6,7 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 from typing import Dict, List, Optional, Type
 
-from autograder.testcase_utils.abstract_testcase import TestCase
+from testcase_utils.abstract_testcase import TestCase
 
 L = getLogger()
 

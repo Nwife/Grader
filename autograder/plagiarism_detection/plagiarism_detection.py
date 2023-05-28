@@ -5,11 +5,11 @@ from typing import List
 import numpy as np
 from antlr4 import CommonTokenStream, InputStream
 
-from autograder.plagiarism_detection.comparison import get_similarity
-from autograder.plagiarism_detection.lexers.CLexer import CLexer
-from autograder.plagiarism_detection.lexers.CppLexer import CppLexer
-from autograder.plagiarism_detection.lexers.Java8Lexer import JavaLexer
-from autograder.plagiarism_detection.lexers.Python3Lexer import Python3Lexer
+from plagiarism_detection.comparison import get_similarity
+from plagiarism_detection.lexers.CLexer import CLexer
+from plagiarism_detection.lexers.CppLexer import CppLexer
+from plagiarism_detection.lexers.Java8Lexer import JavaLexer
+from plagiarism_detection.lexers.Python3Lexer import Python3Lexer
 
 
 # entry point function that is called to compare a set of files with each other

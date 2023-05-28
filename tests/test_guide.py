@@ -1,6 +1,6 @@
 import json
 
-from autograder.__main__ import main as autograder
+from __main__ import main as autograder
 from tempfile import TemporaryDirectory
 
 from . import tools

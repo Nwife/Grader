@@ -1,7 +1,7 @@
 import json
 from typing import Set, Tuple
 
-from autograder.__main__ import main as autograder
+from __main__ import main as autograder
 
 from pytest import approx
 from . import tools

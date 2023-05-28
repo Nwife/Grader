@@ -2,8 +2,8 @@ import re
 from pathlib import Path
 from typing import Any, Dict
 
-from autograder.testcase_utils.exit_codes import ExitCodeEventType
-from autograder.testcase_utils.testcase_result_validator import LAST_LINE_SPLITTING_CHARACTER
+from testcase_utils.exit_codes import ExitCodeEventType
+from testcase_utils.testcase_result_validator import LAST_LINE_SPLITTING_CHARACTER
 
 template_matcher = re.compile("{ *% *([A-Za-z0-9_]+) *% *}")
 

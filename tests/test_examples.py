@@ -3,7 +3,7 @@ import sys
 from pathlib import Path
 from typing import Union
 
-from autograder.__main__ import main as autograder
+from __main__ import main as autograder
 
 from . import tools
 

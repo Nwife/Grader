@@ -3,7 +3,7 @@ import logging
 import sys
 from pathlib import Path
 from typing import List, Optional
-from autograder import guide
+import guide as guide
 
 
 L = logging.getLogger("AUTOGRADER")
@@ -18,7 +18,7 @@ def main(argv: Optional[List[str]] = None):
 
     args = parser.parse_args(argv)
     if args.version:
-        from autograder import __version__
+        from init import __version__
 
         print(__version__)
     # the interface architecture needs to be refactored a bit. For now, this hack with hasattr
@@ -114,7 +114,7 @@ def _add_submission_list_argument(parser: argparse.ArgumentParser):
 
 
 def _evaluate_args(args: argparse.Namespace, current_dir: Path):
-    from .autograder import AutograderPaths, Grader
+    from autograder import AutograderPaths, Grader
 
     if args.command == "guide":
         guide.main(AutograderPaths(current_dir), args.language, not args.no_interactive)

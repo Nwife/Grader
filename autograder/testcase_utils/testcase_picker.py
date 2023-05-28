@@ -3,9 +3,9 @@ from itertools import chain
 from pathlib import Path
 from typing import List, Optional, Sequence, Type
 
-from autograder.util import AutograderError, import_from_path
+from util import AutograderError, import_from_path
 
-from autograder.testcase_utils.abstract_testcase import TestCase
+from testcase_utils.abstract_testcase import TestCase
 
 L = logging.getLogger("AUTOGRADER.testcase_utils.testcase_picker")
 

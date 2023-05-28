@@ -2,7 +2,7 @@ import shutil
 from pathlib import Path
 from typing import Dict, Optional, Type
 
-from .autograder import AutograderPaths
+from autograder import AutograderPaths
 from testcase_utils.abstract_testcase import TestCase
 from testcase_utils.testcase_picker import TestCasePicker
 
@@ -67,7 +67,7 @@ def main(paths: AutograderPaths, language_name: Optional[str] = None, interactiv
             print("\nJava forces us to have the same name for module and class so")
             print("you must put expected names for java submissions in tests/config.ini. Right now it's 'Homework'")
     print(
-        "\n\nNow if you want to grade your submissions, you can use 'autograder run path/to/submissions/dir' "
+        f"\n\nNow if you want to grade your submissions, you can use 'autograder run {paths.current_dir}' "
         "for this directory."
     )
     print(f"You can write your testcases in {paths.testcases_dir}")
