@@ -1,0 +1,1 @@
+from autograder.plagiarism_detectionplagiarism_detection import compare
