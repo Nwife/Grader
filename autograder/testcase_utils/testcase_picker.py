@@ -1,3 +1,6 @@
+"""
+Helps to discover supported test-cace types. E.g. python, C, and Java
+"""
 import logging
 from itertools import chain
 from pathlib import Path
